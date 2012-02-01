@@ -1,1 +1,707 @@
+// **************************************************
+// MAGENTO STYLES
+// Based on css of blank theme
+// **************************************************
+
+// 1. LESS Imports
 @import "helpless.1.0.0.less";
+
+// 2. GENERIC
+/* BreadCrumbs */
+.breadcrumbs { 
+	li { }
+}
+
+/* Page Heading */
+.page-title {
+	h1 { }
+	h2 { }
+
+	.separator { }
+	.link-rss { }
+}
+
+.title-buttons { 
+	h1,h2,h3,h4,h5,h6 { }
+}
+
+.subtitle,
+.sub-title {  }
+
+/* Pager */
+.pager { 
+	.amount { }
+	.limiter { }
+	.pages { 
+		ol { }
+		li { }
+		.current { }
+	}
+}
+
+/* Toolbar */
+.toolbar {
+	.pager { }
+	.sorter { }
+}
+.toolbar-bottom { }
+
+/* Data Table */
+.data-table { 
+	th { }
+	td { 
+		&.value { }
+	}
+	th, td {
+		&.label { }
+	}
+	thead { }
+	tbody { 
+		&.odd { 
+			td { }
+		}
+		&.even { 
+			td { }
+		}
+	}
+	tfoot { }
+	tr {
+		&.first { }
+		&.last { }
+		&.odd { }
+		&.even { }
+		&.border {
+			td { }
+		}
+	}
+}
+
+tr.summary-total {
+	td { }
+	.summary-collapse { }
+}
+tr.show-details {
+	td { }
+	.summary-collapse { }
+}
+tr.show-details td { }
+tr.summary-details-first td {  }
+tr.summary-details-excluded {  }
+
+/* Shopping cart tax info */
+.cart-tax-info { 
+	.cart-price { }
+	.price { }
+}
+.cart-tax-total { }
+.cart-tax-total-expanded { background-position:100% -53px; }
+
+/* Content Styles ================================================================= */
+.product-name { 
+	a { }
+}
+
+/* Product Tags */
+.tags-list { }
+
+/* Advanced Search */
+.advanced-search {}
+.advanced-search-amount {}
+.advanced-search-summary {}
+
+/* CMS Home Page */
+.cms-home .subtitle {}
+.cms-index-index .subtitle {}
+
+/* Sitemap */
+.page-sitemap {
+	.links { }
+	.sitemap { }
+}
+
+/* RSS */
+.rss-title h1 {  }
+.rss-table .link-rss { }
+
+/* TODO:Classes for std */
+/* TODO:Classes for misc */
+/* TODO:Classes for sidebar */
+
+/* Category Page ========================================================================= */
+.category-title { }
+.category-image { 
+	img { }
+}
+.category-description {  }
+.category-products { }
+
+/* View Type: Grid */
+.products-grid { 
+	&.last { }
+	.item { }
+	.product-image { }
+	.product-name { 
+		a { }
+	}
+	.price-box { }
+	.availability { }
+	.actions { }
+}
+
+/* View Type: List */
+.products-list {
+	.item {
+		&.last {
+
+		}
+	}
+	.product-image { }
+	.product-shop { }
+	.product-name { 
+		a { }
+	}
+	.price-box { }
+	.availability { }
+	.desc {
+		.link-learn { }
+	}
+	.add-to-links {
+		li { }
+		.separator { }
+	}
+}
+
+/* Product View ========================================================================== */
+/* Rating */
+.no-rating { margin:0; }
+
+.ratings { 
+	strong { }
+	dt { }
+	dd { }
+	.rating-links {
+		.separator { }
+	}
+	.rating-box { }
+	.amount { }
+}
+.rating-box {
+	.rating { }
+}
+
+.ratings-table {
+	th { }
+	td { }
+	th, td { }
+}
+
+/* Availability */
+.availability { 
+	span { }
+	&.in-stock span { }
+	&.out-of-stock span { }
+}
+
+.availability-only { 
+	a { }
+	strong { }
+	.expanded { }
+}
+
+.availability-only-details { 
+	th { }
+	td { }
+}
+
+/* Email to a Friend */
+.email-friend {}
+
+/* Alerts */
+.alert-price {}
+.alert-stock {}
+
+/********** < Product Prices */
+.price { }
+
+.price-box { 
+	.price  { }
+}
+
+/* Regular price */
+.regular-price { 
+	.price { }
+}
+
+/* Old price */
+.old-price {
+	.price-label { }
+	.price { }
+}
+
+/* Special price */
+.special-price {
+	.price-label { }
+	.price { }
+}
+
+/* Minimal price (as low as) */
+.minimal-price {
+	.price-label { }
+}
+
+.minimal-price-link { 
+	.label { }
+	.price { }
+}
+
+/* Excluding tax */
+.price-excluding-tax { 
+	.label { }
+	.price { }
+}
+
+/* Including tax */
+.price-including-tax { 
+	.label { }
+	.price { }
+}
+
+/* Configured price */
+.configured-price {
+	.price-label { }
+	.price { }
+}
+
+/* FPT */
+.weee { 
+	.price { }
+}
+
+/* Excl tax (for order tables) */
+.price-excl-tax  { 
+	.label { }
+	.price { }
+}
+
+/* Incl tax (for order tables) */
+.price-incl-tax { 
+	.label { }
+	.price { }
+}
+
+/* Price range */
+.price-from {
+	.price-label { }
+}
+
+.price-to {
+	.price-label { }
+}
+
+/* Price notice next to the options */
+.price-notice { 
+	.price { }
+}
+
+/* Price as configured */
+.price-as-configured {
+	.price-label { }
+}
+
+.price-box-bundle { }
+/********** Product Prices > */
+
+/* Tier Prices */
+.tier-prices {
+	.price { }
+	.benefit { }
+}
+
+.tier-prices-grouped {}
+
+/* Add to Links */
+.add-to-links .separator { }
+
+/* Add to Cart */
+.add-to-cart {
+	label { }
+	.qty { }
+	button.button { }
+	.paypal-logo { }
+	.paypal-or { }
+}
+
+/* Add to Links + Add to Cart */
+.add-to-box {
+	.add-to-cart { }
+	.or { }
+	.add-to-links { }
+}
+
+.product-essential { }
+
+.product-collateral .box-collateral { }
+
+.product-view {
+	
+	/* Product Shop */
+	.product-shop { }
+	.product-name { }
+	.short-description { }
+
+	/* Grouped Product */
+	.grouped-items-table { }
+
+
+	/* Block: Description */
+	.box-description { }
+
+	/* Block: Additional */
+	.box-additional { }
+
+	/* Block: Upsell */
+	.box-up-sell {
+		.products-grid td { }
+	}
+
+	/* Block: Tags */
+	.box-tags {
+		.form-add {
+			label { }
+			.input-box { }
+			.input-text { }
+			p { }
+		}
+	}
+
+	/* Block: Reviews */
+	.box-reviews {
+		.form-add {}
+	}
+
+}
+
+
+/* Product Options */
+.product-options { 
+	dt {
+		label { }
+		.qty-holder {
+			label { }
+		}
+		.qty-disabled { }
+	}
+
+	dd {
+		textarea { }
+		select { }
+		.input-text { }
+		.datetime-picker { }
+		.time-picker { }
+	}
+	.options-list {
+		.radio { }
+		.checkbox { }
+		.label { }
+	}
+	.validation-failed { }
+	.required { }
+}
+
+.product-options-bottom { 
+	.price-box { }
+}
+
+
+/* Send a Friend */
+.send-friend {}
+/* ========================================================================== Product View */
+
+/* Shopping Cart ========================================================================= */
+.cart {
+	/* Checkout Types */
+	.checkout-types { }
+	
+	/* Shopping Cart Collateral boxes */
+	.cart-collaterals { }
+
+	.crosssell {
+		h2 { }
+		.product-image { }
+		.product-details { }
+		.item { }
+	}
+
+	/* Discount Codes & Estimate Shipping and Tax Boxes */
+	.discount,
+	.shipping { }
+
+	/* Shopping Cart Totals */
+	.totals { 
+		table { 
+			th { }
+			td { }
+			tfoot th { }
+		}
+	}
+}
+
+/* Shopping Cart Table */
+.cart-table .item-msg { font-size:10px; }
+
+
+/* Options Tool Tip */
+.item-options {
+	dt { }
+	dd { }
+}
+.truncated { 
+	.dots { }
+	.details { }
+	.truncated_full_value {
+		.item-options { 
+			> p { }
+		}
+	}
+	.show { 
+		.item-options { }
+	}
+}
+/* ========================================================================= Shopping Cart */
+
+/* Checkout ============================================================================== */
+/********** < Common Checkout Styles */
+/* Shipping and Payment methods */
+.sp-methods { 
+	dt {  }
+	.price { }
+	.form-list { }
+	.month { }
+	.year { }
+	.cvv { }
+	.checkmo-list {
+		li { }
+		label { }
+		address { }
+	}
+	.centinel-logos {
+		a { }
+		img { }
+	}
+
+	.release-amounts { 
+		button { }
+	}
+}
+
+.please-wait { 
+	img { }
+}
+.cvv-what-is-this { cursor:help; margin-left:5px; }
+
+/* Tooltip */
+.tool-tip { 
+	.btn-close {
+		a { }
+	}
+	.tool-tip-content { }
+}
+
+/* Gift Messages */
+.gift-messages { }
+.gift-messages-form { 
+	label { }
+	h4 { }
+	.whole-order {}
+	.item { 
+		.product-img-box { }
+		.product-image { }
+		.number { }
+		.details { 
+			.product-name { }
+		}
+	}
+}
+
+.gift-message-link { 
+	&.expanded { }
+}
+.gift-message-row {
+	.btn-close { }
+}
+
+/* Checkout Agreements */
+.checkout-agreements {
+	li { }
+	.agreement-content { }
+	.agree { }
+}
+
+/* Centinel */
+.centinel {
+	.authentication {
+		iframe { }
+	}
+}
+
+/* Generic Info Set */
+.info-set {}
+/********** Common Checkout Styles > */
+
+/* One Page Checkout */
+.block-progress {
+	dt { }
+	.complete { }
+}
+
+.opc { 
+	.section { }
+	.buttons-set.disabled button.button { }
+	.buttons-set .please-wait { height:21px; line-height:21px; }
+	.step-title { 
+		h2 { }
+		a { }
+		.number { }
+	}
+	.allow {
+		.step-title { 
+			a { }
+		}
+	}
+	.active {
+		.step-title { 
+			a { }
+		}
+	}
+	.step { 
+		.tool-tip { }
+	}
+	.order-review {
+		.authentication { }
+		.warning-message { }
+	}
+}
+
+/* Multiple Addresses Checkout */
+.checkout-progress { 
+	li { 
+		&.active { }
+	}
+}
+
+.multiple-checkout { 
+	.tool-tip { }
+	.grand-total { 
+		big { }
+		.price { }
+	}
+}
+/* ============================================================================== Checkout */
+
+
+
+
+/* Account Login/Create Pages ============================================================ */
+.account-login {}
+.account-login .new-users {}
+.account-login .registered-users {}
+
+.account-create {}
+/* ============================================================ Account Login/Create Pages */
+
+
+/* Remember Me Popup ===================================================================== */
+.window-overlay { background:url(../images/window_overlay.png) repeat; background:rgba(0, 0, 0, 0.35); position:absolute; top:0; left:0; height:100%; width:100%; z-index:990; }
+
+.remember-me label {}
+.remember-me-popup {}
+.remember-me-popup h3 {}
+.remember-me-popup .remember-me-popup-head {}
+.remember-me-popup .remember-me-popup-head .remember-me-popup-close {}
+.remember-me-popup .remember-me-popup-body {}
+.remember-me-popup .remember-me-popup-body a {}
+/* ===================================================================== Remember Me Popup */
+
+
+/* My Account ============================================================================= */
+.my-account .title-buttons .link-rss { float:none; margin:0; }
+
+/********** < Dashboard */
+.dashboard {}
+.dashboard .welcome-msg {}
+
+/* Block: Recent Orders */
+.dashboard .box-recent { margin:10px 0; }
+
+/* Block: Account Information */
+.dashboard .box-info {}
+
+/* Block: Reviews */
+.dashboard .box-reviews .number { float:left; font-size:10px; font-weight:bold; line-height:1; color:#fff; margin:3px -20px 0 0; padding:2px 3px; background:#ddd; }
+.dashboard .box-reviews .details { margin-left:20px; }
+
+/* Block: Tags */
+.dashboard .box-tags .number { float:left; font-size:10px; font-weight:bold; line-height:1; color:#fff; margin:3px -20px 0 0; padding:2px 3px; background:#ddd; }
+.dashboard .box-tags .details { margin-left:20px; }
+/********** Dashboard > */
+
+/* Address Book */
+.addresses-list {}
+.addresses-list-additional li.item {}
+
+/* Order View */
+.order-info { border:1px solid #ddd; padding:5px; }
+.order-info dt,
+.order-info dd,
+.order-info ul,
+.order-info li { display:inline; }
+.order-info dt { font-weight:bold; }
+
+.order-date { margin:10px 0; }
+
+.order-info-box {}
+
+.order-items { width:100%; overflow-x:auto; }
+
+.order-additional { margin:15px 0; }
+/* Order Gift Message */
+.gift-message dt strong { color:#666; }
+.gift-message dd { font-size:13px; margin:5px 0 0; }
+/* Order Comments */
+.order-about dt { font-weight:bold; }
+.order-about dd { font-size:13px; margin:0 0 7px; }
+
+.tracking-table { margin:0 0 15px; }
+.tracking-table th { font-weight:bold; white-space:nowrap; }
+
+.tracking-table-popup { width:100%; }
+.tracking-table-popup th { font-weight:bold; white-space:nowrap; }
+.tracking-table-popup th,
+.tracking-table-popup td { padding:1px 8px; }
+
+/* Order Print Pages */
+/*.page-print .print-head {}
+.page-print .print-head img { float:left; }
+.page-print .print-head address { float:left; margin-left:15px; }*/
+/* Price Rewrites */
+/*.page-print .gift-message-link { display:none; }
+.page-print .price-excl-tax,
+.page-print .price-incl-tax { display:block; white-space:nowrap; }
+.page-print .cart-price,
+.page-print .price-excl-tax .label,
+.page-print .price-incl-tax .label,
+.page-print .price-excl-tax .price,
+.page-print .price-incl-tax .price { display:inline; }*/
+
+/* My Reviews */
+.product-review .product-img-box { float:left; width:140px;  }
+.product-review .product-img-box .product-image { display:block; width:125px; height:125px; }
+.product-review .product-img-box .label { font-size:11px; margin:0 0 3px; }
+.product-review .product-img-box .ratings .rating-box { float:none; display:block; margin:0 0 3px; }
+.product-review .product-details { margin-left:150px; }
+.product-review .product-name { font-size:16px; font-weight:bold; margin:0 0 10px; }
+.product-review h3 {}
+.product-review .ratings-table { margin:0 0 10px; }
+.product-review dt { font-weight:bold; }
+.product-review dd { font-size:13px; margin:5px 0 0; }
+/* ============================================================================= My Account */
