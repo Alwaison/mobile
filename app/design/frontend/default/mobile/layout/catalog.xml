@@ -163,7 +163,7 @@ Compare products page
             <action method="setTemplate"><template>page/popup.phtml</template></action>
         </reference>
         <reference name="head">
-            <action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/product-min.js</script></action>
         </reference>
         <reference name="content">
             <block type="catalog/product_compare_list" name="catalog.compare.list" template="catalog/product/compare/list.phtml"/>
@@ -187,8 +187,8 @@ Product view
             <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
         </reference>
         <reference name="head">
-            <action method="addJs"><script>varien/product.js</script></action>
-            <action method="addJs"><script>varien/configurable.js</script></action>
+            <action method="addJs"><script>varien/product-min.js</script></action>
+            <action method="addJs"><script>varien/configurable-min.js</script></action>
         </reference>
         <reference name="content">
             <block type="catalog/product_view" name="product.info" template="catalog/product/view.phtml">
@@ -323,7 +323,7 @@ Product send to friend
             <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
         </reference>
         <reference name="head">
-            <action method="addJs"><script>varien/product.js</script></action>
+            <action method="addJs"><script>varien/product-min.js</script></action>
         </reference>
         <reference name="content">
             <block type="catalog/product_send" name="product.send" template="catalog/product/send.phtml">
