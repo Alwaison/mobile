@@ -60,10 +60,20 @@ Load this update on every page when customer is logged in
         </reference>
 
         <reference name="customer_account_navigation">
-            <action method="addLink" translate="label" module="wishlist" ifconfig="wishlist/general/active"><name>wishlist</name><path>wishlist/</path><label>My Wishlist</label></action>
-            <action method="addLink" translate="label" module="customer"><name>logout</name><path>customer/account/logout</path><label>Logout</label></action><!-- 
-            <action method="addLink" translate="label title" module="customer"><label>Log Out</label><url helper="customer/getLogoutUrl"/><title>Log Out</title><prepare/><urlParams/><position>100</position></action> -->
         </reference>        
+        <reference name="header">
+            <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
+                <action method="addLink" translate="label" module="customer"><name>account_edit</name><path>customer/account/edit/</path><label>Account Information</label></action>
+                <action method="addLink" translate="label" module="wishlist" ifconfig="wishlist/general/active"><name>wishlist</name><path>wishlist/</path><label>My Wishlist</label></action>
+                <action method="addLink" translate="label" module="downloadable"><name>downloadable_products</name><path>downloadable/customer/products</path><label>My Downloadable Products</label></action>
+                <action method="addLink" translate="label"><name>recurring_profiles</name><path>sales/recurring_profile/</path><label>Recurring Profiles</label></action>
+                <action method="addLink" translate="label"><name>billing_agreements</name><path>sales/billing_agreement/</path><label>Billing Agreements</label></action>                
+
+
+                <action method="addLink" translate="label" module="customer"><name>logout</name><path>customer/account/logout</path><label>Logout</label></action>
+                
+            </block>
+        </reference>
          <!-- <reference name="top.links">
             <action method="addLink" translate="label title" module="customer"><label>Log Out</label><url helper="customer/getLogoutUrl"/><title>Log Out</title><prepare/><urlParams/><position>100</position></action>
         </reference> -->

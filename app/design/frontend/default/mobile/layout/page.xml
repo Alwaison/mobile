@@ -40,9 +40,9 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>lib/ccard-min.js</script></action>
                 <action method="addJs"><script>prototype/validation-min.js</script></action>
                 <action method="addJs"><script>varien/js-min.js</script></action>
-                <action method="addJs"><script>varien/formv.js</script></action>
-                <action method="addJs"><script>mage/translate.js</script></action>
-                <action method="addJs"><script>mage/cookies.js</script></action>
+                <action method="addJs"><script>varien/form-min.js</script></action>
+                <action method="addJs"><script>mage/translate-min.js</script></action>
+                <action method="addJs"><script>mage/cookies-min.js</script></action>
 
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 

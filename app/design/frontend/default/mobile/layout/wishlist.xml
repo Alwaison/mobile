@@ -40,9 +40,9 @@ Default layout, loads most of the pages
         </reference> -->
 
         <!-- Mage_Wishlist -->
-        <reference name="right">
+<!--         <reference name="right">
             <block type="wishlist/customer_sidebar" name="wishlist_sidebar" as="wishlist" after="cart_sidebar" template="wishlist/sidebar.phtml"/>
-        </reference>
+        </reference> -->
     </default>
 
 <!--
@@ -65,7 +65,7 @@ Customer account home dashboard layout
         <reference name="right">
             <action method="unsetChild"><name>wishlist</name></action>
         </reference>
-    </customer_account_index>
+    </customer_account_index>  
 
 <!--
 Wishlist pages
